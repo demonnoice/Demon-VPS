@@ -268,7 +268,7 @@ class GoogleDriveHelper:
     def __create_directory(self, directory_name, dest_id):
         file_metadata = {
             "name": directory_name,
-            "description": f'Uploaded by {HUMɅN Mirror Bot}',
+            "description": f'Uploaded by {self.__listener.message.from_user.id}',
             "mimeType": self.__G_DRIVE_DIR_MIME_TYPE
         }
         if dest_id is not None:
